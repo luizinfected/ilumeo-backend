@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "32d08568-6d02-4239-90b9-ffa336c966b1",
+		"name": "Ilumeo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37388303"
+	},
+	"item": [
+		{
+			"name": "POST create Registers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"IN\",\n    \"userCode\": \"usuario123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://ilumeo-backend-ggxn.onrender.com/registers"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Registers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ilumeo-backend-ggxn.onrender.com/registers/usuario123"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://ilumeo-backend-ggxn.onrender.com/code/ilumeo"
+			},
+			"response": []
+		},
+		{
+			"name": "POST create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"ilumeo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://ilumeo-backend-ggxn.onrender.com/user"
+			},
+			"response": []
+		}
+	]
+}

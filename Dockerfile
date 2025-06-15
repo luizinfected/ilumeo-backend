@@ -7,6 +7,8 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
+RUN npm run build
+RUN npm install ts-node-dev
 
 FROM node:18-alpine
 
